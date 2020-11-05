@@ -95,6 +95,7 @@ int main(int argc, char** argv)
 				to_send->width = width;
 				to_send->height = height;
                 MPI_Send(to_send, 1, mpi_image_type,index, ntag, MPI_COMM_WORLD);
+                stbi_image_free(data);
                 free(to_send);
             } 
             
