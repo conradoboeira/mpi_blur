@@ -45,7 +45,7 @@ int main(int argc, char** argv)
 	//DEFINE MPI STRUCTURE
     const int nitems=3;
     int          blocklengths[3] = {MAX_SIZE*3,1,1};
-    MPI_Datatype types[3] = {MPI_UINT8_T, MPI_INT, MPI_INT};
+    MPI_Datatype types[3] = {MPI_UNSIGNED_CHAR, MPI_INT, MPI_INT};
     MPI_Datatype mpi_image_type;
     MPI_Aint     offsets[3];
 
